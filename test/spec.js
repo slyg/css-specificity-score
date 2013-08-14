@@ -2,7 +2,7 @@ var assert = require("assert")
 var cssSpecReporter = require("../")
 
 
-describe('\'CSS Specificity Reporter\'', function(){
+describe('"CSS Specificity Reporter"', function(){
     
     describe('Object', function(){
         
@@ -55,6 +55,14 @@ describe('\'CSS Specificity Reporter\'', function(){
             
         })
         
+        it('should be an array of length 1 when selector is "ul{}"', function(done){
+            
+            cssSpecReporter("ul{}", function(err, report){
+                assert.equal(1, report.length);
+                done(); 
+            })
+        })
+        
     })
     
     describe('callback error', function(){
@@ -64,6 +72,17 @@ describe('\'CSS Specificity Reporter\'', function(){
             cssSpecReporter(2, function(err, report){
                 
                 assert.equal("string", typeof err);
+                done();
+                
+            })
+            
+        })
+        
+        it('should be null when passed argument is an empty string', function(done){
+            
+            cssSpecReporter("", function(err, report){
+                
+                assert.equal(null, err);
                 done();
                 
             })
