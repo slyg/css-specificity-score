@@ -11,6 +11,8 @@ function getScore(specArray){
 }
 
 function generateReport(cssStringData, cb){
+
+    cssStringData = cssStringData.replace(/\/\*[^]*?\*\//g, ''); // strip comments /**/
     
     var selectors = css
         .parse(cssStringData)

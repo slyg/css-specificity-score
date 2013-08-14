@@ -1,33 +1,26 @@
-body ul li #nav #coucou #nav #coucou .selected .selected .selected .selected .selected .selected .selected .selected .selected .selected .selected .selected .selected .selected .selected > a:hover #nav #coucou #nav #coucou #nav #coucou #nav #coucou #nav #coucou {
-	font-size:2em;
-}
+/* css comments */
 
-ul {
-	color:red;
-}
+/*
+    multiline
+    css comments
+*/
 
-ul li a {
-	text-decoration:underline;
-}
+html > body p.truc ul#main-navigation:hover {}
 
-a:hover {
-	color:blue;
-}
+html > body .truc ul#main-navigation:hover {}
 
-* ul:hover li:last-child .truc span {
-	float:left;
-}
+html > body p ul#main-navigation:hover {}
 
-body #wrapper .article ul.meta li a {
-}
+body p ul#main-navigation:hover {}
 
-.meta a {
-	color:red;
-}
+body ul#main-navigation:hover {}
 
-.meta a {
-	color:blue!important;
-}
+ul#main-navigation:hover {}
 
-body * {
-}
+#main-navigation:hover {}
+
+#main-navigation {}
+
+ul:hover {}
+
+ul {}
