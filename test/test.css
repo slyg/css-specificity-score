@@ -1,0 +1,33 @@
+body ul li #nav #coucou #nav #coucou .selected .selected .selected .selected .selected .selected .selected .selected .selected .selected .selected .selected .selected .selected .selected > a:hover #nav #coucou #nav #coucou #nav #coucou #nav #coucou #nav #coucou {
+	font-size:2em;
+}
+
+ul {
+	color:red;
+}
+
+ul li a {
+	text-decoration:underline;
+}
+
+a:hover {
+	color:blue;
+}
+
+* ul:hover li:last-child .truc span {
+	float:left;
+}
+
+body #wrapper .article ul.meta li a {
+}
+
+.meta a {
+	color:red;
+}
+
+.meta a {
+	color:blue!important;
+}
+
+body * {
+}
