@@ -1,17 +1,14 @@
 {
   "name": "test",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Generate a report on css rules specificity",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": "",
+  "repository": "https://github.com/slyg/css-specificity-score",
   "author": "Sylvain Faucherand <syl.faucherand@gmail.com>",
   "license": "BSD",
   "dependencies": {
     "css": "~1.4.1",
-    "css-explain": "https://github.com/slyg/css-explain/archive/v0.1.1.tar.gz",
-    "underscore": "~1.5.1"
+    "underscore": "~1.5.1",
+    "css-explain": "https://github.com/slyg/css-explain/archive/v0.1.1.tar.gz"
   }
 }
