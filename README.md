@@ -1,8 +1,7 @@
-CSS specificity score
+CSS specificity score [![Build Status](https://travis-ci.org/slyg/css-specificity-score.png?branch=master)](https://travis-ci.org/slyg/css-specificity-score)
 =====================
 
 Generate a (customized) report on css rules specificity + score
-[![Build Status](https://travis-ci.org/slyg/css-specificity-score.png?branch=master)](https://travis-ci.org/slyg/css-specificity-score)
 
 ## Install
 
