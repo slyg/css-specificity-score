@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "css-specificity-score",
   "version": "0.1.0",
   "description": "Generate a report on css rules specificity",
   "main": "index.js",
