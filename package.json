@@ -10,5 +10,8 @@
     "css": "~1.4.1",
     "underscore": "~1.5.1",
     "css-explain": "https://github.com/slyg/css-explain/archive/v0.1.1.tar.gz"
+  },
+  "scripts" : {
+    "test" : "mocha"
   }
 }
