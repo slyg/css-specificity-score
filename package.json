@@ -11,7 +11,7 @@
     "underscore": "~1.5.1",
     "css-explain": "https://github.com/slyg/css-explain/archive/v0.1.1.tar.gz"
   },
-  devDependencies : {
+  "devDependencies" : {
     "mocha" : "~1.12.0"
   },
   "scripts" : {
