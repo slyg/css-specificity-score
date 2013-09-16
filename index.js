@@ -20,7 +20,13 @@ function generateReport(cssStringData, cb){
         err = "Argument is not a string";
     } else {
 
-        cssStringData = cssStringData.replace(/\/\*[^]*?\*\//g, ''); // strip comments /**/
+        cssStringData = cssStringData
+            // strip comments /**/
+            .replace(/\/\*[^]*?\*\//g, '')
+            // strip mediaqueries @media
+            .replace(/\}(\s*\n)*\s*\}/gim, '}')
+            .replace(/@media[^{]*\{(?:(?!\}\s*\}).)*/gim, '\n')
+        ;
         
         // get all selectors from css file
         var selectors = css

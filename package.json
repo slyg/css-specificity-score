@@ -1,6 +1,6 @@
 {
   "name": "css-specificity-score",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate a report on css rules specificity",
   "main": "index.js",
   "repository": "https://github.com/slyg/css-specificity-score",

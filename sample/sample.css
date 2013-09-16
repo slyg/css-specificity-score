@@ -19,3 +19,10 @@ ul:hover {}
 ul {}
 
 ul, li {}
+
+@media only screen and (max-width:320px){
+	#main-navigation {}
+	#main-navigation .insidemediaquery {}
+}
+
+.lastsampleselector {}

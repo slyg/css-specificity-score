@@ -4,7 +4,7 @@ var assert = require("assert")
 var _ = require("underscore")
 var cssSpecReporter = require("../")
 var testCSSPath = path.resolve(__dirname, './test.css')
-
+var testCSSMediaQueries = path.resolve(__dirname, './media.css')
 
 describe('"CSS Specificity Reporter"', function(){
     
@@ -239,9 +239,46 @@ describe('"CSS Specificity Reporter"', function(){
                 })
                 
             })
+
+            it('should match selectors embded in @media queries', function(done){
+
+                cssSpecReporter(fs.readFileSync(testCSSMediaQueries, 'utf8'), function(err, report){
+                    assert.deepEqual([
+                        { 
+                            selector: '#main-navigation',
+                            score: 100,
+                            explainScore: 1,
+                            specificity: [ 1, 0, 0 ] 
+                        },
+                        { 
+                            selector: '#main-navigation .insidemediaquery',
+                            score: 110,
+                            explainScore: 6,
+                            specificity: [ 1, 1, 0 ] 
+                        },
+                        { 
+                            selector: '.outsidemediaquery',
+                            score: 10,
+                            explainScore: 2,
+                            specificity: [ 0, 1, 0 ] 
+                        }
+                    ], report)
+                    done()
+                })
+
+            })
             
         })
         
     })
     
 })
+
+
+
+
+
+
+
+
+
